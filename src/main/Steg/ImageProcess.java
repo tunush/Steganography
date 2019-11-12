@@ -89,8 +89,8 @@ public class ImageProcess {
                 try {
                     Color c = new Color(img.getRGB(j, i));
                     byte blue = (byte) c.getBlue();
-                    int red = c.getRed();
-                    int green = c.getGreen();
+                    /*int red = c.getRed();
+                    int green = c.getGreen();*/
                     hiddenBytes[l] = (byte) ((hiddenBytes[l] << 1) | (blue & 1));
                 }
                 catch (ArrayIndexOutOfBoundsException ae){}
